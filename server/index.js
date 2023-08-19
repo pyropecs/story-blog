@@ -1,5 +1,5 @@
 import express, { urlencoded } from "express";
-
+import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
 import cors from "cors";
 import { registerUser, userLogin } from "./routes/index.js";
@@ -11,6 +11,7 @@ const corsOptions = {
   origin: true,
   credentials: true,
 };
+app.use(cookieParser());
 app.use(urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors(corsOptions));

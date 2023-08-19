@@ -19,3 +19,5 @@ export async function registerUser(req, res) {
       ]);
   } else res.sendStatus(400);
 }
+
+const maxAge = 3 * 24 * 60 * 60;

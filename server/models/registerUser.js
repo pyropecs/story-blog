@@ -22,3 +22,9 @@ export async function checkUserexist(email) {
     return true;
   }
 }
+export async function getUser(email) {
+  const results = await client.query("select * from users WHERE email = $1 ", [
+    email,
+  ]);
+  return results.rows[0];
+}
