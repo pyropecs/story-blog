@@ -25,7 +25,7 @@ app.post("/register", registerUser);
 app.post("/login", userLogin);
 app.get("/logout", userLogout);
 // app.get("/blogs", getBlogs);
-// app.post("/blogs", postBlogs);
+app.post("/blogs", postBlogs);
 app.listen(process.env.PORT_NUMBER, () =>
   console.log(`currently running on port ${process.env.PORT_NUMBER} `)
 );
