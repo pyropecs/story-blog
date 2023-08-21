@@ -1,0 +1,16 @@
+.hero {
+  height: 20rem;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+}
+.hero-name {
+  width: 50%;
+  text-transform: capitalize;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
