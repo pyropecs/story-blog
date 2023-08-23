@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./navbar.css";
+
 import { FaBars, FaXmark } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [close, setClose] = useState(false);
 
@@ -18,7 +20,9 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="login  ">
-          <button className="login-btn hide  ">Sign Up</button>
+          <Link to="/register">
+            <button className="login-btn hide  ">Sign Up</button>
+          </Link>
 
           <div
             className="big-hide bar-icon  "

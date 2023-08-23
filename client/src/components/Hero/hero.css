@@ -1,5 +1,5 @@
 .hero {
-  height: 20rem;
+  height: 25rem;
   text-align: center;
   margin: 0;
   display: flex;
@@ -13,4 +13,19 @@
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
+  margin-bottom: 0px;
+}
+.register {
+  width: 15rem;
+  height: 2.5rem;
+  margin-top: 30px;
+  border-style: none;
+  background-color: white;
+  color: black;
+  font-size: 1.25rem;
+}
+
+.register:hover {
+  background-color: rgb(227, 218, 218);
+  transition: all 200ms ease-in;
 }

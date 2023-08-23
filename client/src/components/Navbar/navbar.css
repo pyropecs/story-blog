@@ -22,7 +22,7 @@
   display: flex;
 
   width: 20rem;
-
+  padding: 0;
   text-decoration: none;
   list-style-type: none;
 }
