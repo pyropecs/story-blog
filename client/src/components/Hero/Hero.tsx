@@ -25,7 +25,9 @@ export default function Hero() {
         <Link to="/register">
           <button className="register">Sign up</button>
         </Link>
-        <p className="alt-login">already have an account ?</p>
+        <p className="alt-login">
+          already have an account? <Link to="/login">Log in</Link>{" "}
+        </p>
       </div>
     </div>
   );

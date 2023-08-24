@@ -1,4 +1,4 @@
-import { Form } from "../components/Form/Form";
+import RegisterContainer from "../container/RegisterContainer";
 export default function Register() {
-  return <Form />;
+  return <RegisterContainer />;
 }

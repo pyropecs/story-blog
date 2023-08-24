@@ -29,3 +29,6 @@
   background-color: rgb(227, 218, 218);
   transition: all 200ms ease-in;
 }
+.alt-login > a {
+  color: rgb(221, 221, 221);
+}

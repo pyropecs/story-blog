@@ -57,3 +57,9 @@
   transition: all 300ms ease-in-out;
   border: 2px solid white;
 }
+.login-redirect {
+  background-color: rgba(0, 0, 0, 0.171);
+}
+.login-redirect > a {
+  color: white;
+}
