@@ -7,7 +7,7 @@ interface FormState {
 }
 
 export default async function postData(FormData: FormState, path: string) {
-  const result = await fetch(`${path}`, {
+  const result = await fetch(`http://localhost:3000${path}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(FormData),
@@ -16,6 +16,6 @@ export default async function postData(FormData: FormState, path: string) {
 
   const json = await result.json();
   const cookie = getJWTauthCookies();
-  console.log(cookie);
-  return json.status;
+
+  return { cookie, ...json };
 }

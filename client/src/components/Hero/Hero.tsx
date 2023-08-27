@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./hero.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 export default function Hero() {
   const str = "More we nurture,more we care...";

@@ -1,7 +1,8 @@
 export const getJWTauthCookies = () => {
-  const cookieValue = document.cookie;
+  const jwtCookie = document.cookie;
+  const value = jwtCookie.split("=");
 
-  return cookieValue;
+  return value[1];
 };
 
 //'name=value';'name2=value'

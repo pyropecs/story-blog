@@ -1,8 +1,9 @@
 import "./form.css";
-import { useReducer, useState } from "react";
+import { useReducer, useContext } from "react";
 import reducer from "../../reducers/formreducer";
 import postData from "./handlers";
 import { Link } from "react-router-dom";
+import { userContext } from "../../context/userContext";
 
 export const Form = ({ path }) => {
   const [Formstate, dispatch] = useReducer(reducer, {
@@ -10,12 +11,13 @@ export const Form = ({ path }) => {
     email: "",
     password: "",
   });
-
+  const { userData, setUserData } = useContext(userContext);
   const newPath = path === "/login" ? "Log in" : "Sign Up";
   async function onClickButtonSubmitHandler(e) {
     e.preventDefault();
     const data = await postData(Formstate, path);
-    console.log(data);
+
+    setUserData(data);
   }
   return (
     <div className="form-container">
